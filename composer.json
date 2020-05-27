@@ -1,0 +1,17 @@
+{
+    "name": "beetpix/silverstripe-screenshot",
+    "description": "SDK with helpers to access printscreenapi.com",
+    "type": "silverstripe-vendormodule",
+    "keywords": ["silverstripe", "screenshot", "pdf", "capture"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "beetpix.com",
+            "homepage": "http://beetpix.com"
+        }
+    ],
+    "require": {
+        "silverstripe/framework": "~4.0",
+        "silverstripe/vendor-plugin": "^1.0"
+    }
+}
