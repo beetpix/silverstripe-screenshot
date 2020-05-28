@@ -44,18 +44,18 @@ PRINTSCREENAPI_KEY="YOUR_API_KEY_HERE"
 
 Get image screenshot URL:
 ```php
-$url = Beetpix\PrintScreen::inst()
+$url = \Beetpix\PrintScreen::inst()
     ->fullPage()
     ->getImage('https://www.example.com');
 ```
 Download as PDF:
 ```php
-Beetpix\PrintScreen::inst()
+\Beetpix\PrintScreen::inst()
     ->downloadPDF('https://www.example.com');
 ```
 Additional options, flush cache and read raw result:
 ```php
-$inst = Beetpix\PrintScreen::inst()
+$inst = \Beetpix\PrintScreen::inst()
     ->device('phone-landscape')
     ->click('.btn-accept-cookies')
     ->fullPage()
