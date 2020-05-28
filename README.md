@@ -1,4 +1,4 @@
-# SilverStripe Screenshot Module
+# Silverstripe Screenshot Module
 
 [![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://travis-ci.org/badges/badgerbadgerbadger)
 
@@ -9,9 +9,11 @@ There's a free plan which is perfect for small projects and allows for 100 fresh
 - [Get an API key](https://printscreenapi.com/plans)
 - [Documentation](https://printscreenapi.com/api)
 
+
 ## Requirements
 
 * SilverStripe Framework 4.0+
+
 
 ## Installation
 > Via composer
@@ -20,6 +22,7 @@ There's a free plan which is perfect for small projects and allows for 100 fresh
 > Manually
 * Download and extract files into `printscreenapi/` in your project's root folder
 * Run `/dev/build` in your browser
+
 
 ## Configure API key
 
@@ -35,6 +38,7 @@ Environment (.env)
 ```
 PRINTSCREENAPI_KEY="YOUR_API_KEY_HERE"
 ```
+
 
 ## Example usage
 
@@ -66,6 +70,7 @@ $inst->downloadImage('https://www.example.com');
 // Read raw result
 print_r($inst->getResult());
 ```
+
 
 ## Available methods
 
@@ -100,9 +105,11 @@ https://printscreenapi.com/api/
 | getResult | - | Return raw API result | - |
 | isError | - | Return TRUE if API call was unsuccessful | - |
 
+
 ## Note
 
 Since the API call may take a few extra seconds to complete depending on the parameters you set (eg. `delay` or `fullPage`) it is recommended that you make calls via AJAX if adding screenshot functionality that requires user interaction via web browser.
+
 
 ## License
 
