@@ -53,7 +53,7 @@ Additional options, flush cache and read raw result:
 ```php
 $inst = Beetpix\PrintScreen::inst()
     ->device('phone-landscape')
-    ->click('.btn-dismiss-cookie')
+    ->click('.btn-accept-cookies')
     ->fullPage()
     ->flush();
 
