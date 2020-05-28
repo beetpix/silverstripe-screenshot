@@ -108,7 +108,7 @@ https://printscreenapi.com/api/
 
 ## Note
 
-Since the API call may take a few extra seconds to complete depending on the parameters you set (eg. `delay` or `fullPage`) it is recommended that you make calls via AJAX if adding screenshot functionality that requires user interaction via web browser.
+Since the API call may take a few extra seconds to complete depending on the parameters you set (eg. `delay` or `fullPage`) it is recommended that you make calls via AJAX if adding screenshot functionality that requires user interaction via web browser to prevent timeouts.
 
 
 ## License
