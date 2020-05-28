@@ -9,11 +9,11 @@ There's a free plan which is perfect for small projects and allows for 100 fresh
 - [Get an API key](https://printscreenapi.com/plans)
 - [Documentation](https://printscreenapi.com/api)
 
-### Requirements
+## Requirements
 
 * SilverStripe Framework 4.0+
 
-### Installation
+## Installation
 > Via composer
 * Run `composer require beetpix/silverstripe-screenshot`
 * Run `/dev/build` in your browser
@@ -21,7 +21,7 @@ There's a free plan which is perfect for small projects and allows for 100 fresh
 * Download and extract files into `printscreenapi/` in your project's root folder
 * Run `/dev/build` in your browser
 
-### Configure API key
+## Configure API key
 
 Add your API key via YAML or environment file:
 
@@ -36,7 +36,7 @@ Environment (.env)
 PRINTSCREENAPI_KEY="YOUR_API_KEY_HERE"
 ```
 
-### Example usage
+## Example usage
 
 Get image screenshot URL:
 ```php
@@ -67,7 +67,7 @@ $inst->downloadImage('https://www.example.com');
 print_r($inst->getResult());
 ```
 
-### Available methods
+## Available methods
 
 For detailed explanation about each parameter, please check out the the documentation at:
 https://printscreenapi.com/api/
@@ -100,10 +100,10 @@ https://printscreenapi.com/api/
 | getResult | - | Return raw API result | - |
 | isError | - | Return TRUE if API call was unsuccessful | - |
 
-### Note
+## Note
 
 Since the API call may take a few extra seconds to complete depending on the parameters you set (eg. `delay` or `fullPage`) it is recommended that you make calls via AJAX if adding screenshot functionality that requires user interaction via web browser.
 
-### License
+## License
 
 - **[BSD 2](https://opensource.org/licenses/BSD-2-Clause)**
