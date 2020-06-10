@@ -71,6 +71,12 @@ class PrintScreen
         return $this;
     }
 
+    public function media(string $value)
+    {
+        $this->options['media'] = $value;
+        return $this;
+    }
+
     public function scrollTo(string $value)
     {
         $this->options['scrollto'] = $value;
@@ -116,6 +122,12 @@ class PrintScreen
     public function paperSize(string $value)
     {
         $this->options['size'] = $value;
+        return $this;
+    }
+
+    public function landscape()
+    {
+        $this->options['landscape'] = true;
         return $this;
     }
 
